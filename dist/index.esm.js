@@ -1817,7 +1817,7 @@ var StyledModal = styled.div(templateObject_1$u || (templateObject_1$u = __makeT
     var theme = _a.theme;
     return theme.mediaQueries.xs;
 });
-var ModalHeader = styled.div(templateObject_2$9 || (templateObject_2$9 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #e9eaeb;\n  align-items: center;\n  padding: 12px 24px;\n"], ["\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #e9eaeb;\n  align-items: center;\n  padding: 12px 24px;\n"])));
+var ModalHeader = styled.div(templateObject_2$9 || (templateObject_2$9 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #ddd;\n  align-items: center;\n  padding: 12px 24px;\n"], ["\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #ddd;\n  align-items: center;\n  padding: 12px 24px;\n"])));
 var ModalTitle = styled(Flex)(templateObject_3$5 || (templateObject_3$5 = __makeTemplateObject(["\n  align-items: center;\n  flex: 1;\n"], ["\n  align-items: center;\n  flex: 1;\n"])));
 var Modal = function (_a) {
     var title = _a.title, onDismiss = _a.onDismiss, onBack = _a.onBack, children = _a.children, _b = _a.hideCloseButton, hideCloseButton = _b === void 0 ? false : _b, _c = _a.bodyPadding, bodyPadding = _c === void 0 ? "24px" : _c;
@@ -3049,22 +3049,22 @@ var ResetCSS = createGlobalStyle(templateObject_1$K || (templateObject_1$K = __m
 var templateObject_1$K;
 
 var baseColors = {
-    failure: "#EF9A9A",
+    failure: "#D50000",
     // failure: "#CF6679",
     primary: "#84D4CE",
     primaryBright: "#84D4CE",
     primaryDark: "#84D4CE",
     secondary: "#C5D483",
-    success: "#80CBC4",
-    warning: "#FFB74D",
+    success: "#0CA881",
+    warning: "#F27435",
 };
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FFF", backgroundDisabled: "rgba(33, 33, 33, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(0, 0, 0, .87)", textDisabled: "rgba(0, 0, 0, .38)", textSubtle: "rgba(0, 0, 0, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .16)", modal: "#323232", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FFF", backgroundDisabled: "rgba(33, 33, 33, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(0, 0, 0, .87)", textDisabled: "rgba(0, 0, 0, .38)", textSubtle: "rgba(0, 0, 0, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .16)", modal: "#e5e5e5", gradients: {
         bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#121212", backgroundDisabled: "rgba(255, 255, 255, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .16)", modal: "#323232", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#121212", backgroundDisabled: "rgba(255, 255, 255, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .16)", modal: "#e5e5e5", gradients: {
         bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
     } });
 
