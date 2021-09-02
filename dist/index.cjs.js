@@ -3074,10 +3074,10 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FFF", backgroundDisabled: "rgba(33, 33, 33, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(0, 0, 0, .87)", textDisabled: "rgba(0, 0, 0, .38)", textSubtle: "rgba(0, 0, 0, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .03)", modal: "#323232", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FFF", backgroundDisabled: "rgba(33, 33, 33, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(0, 0, 0, .87)", textDisabled: "rgba(0, 0, 0, .38)", textSubtle: "rgba(0, 0, 0, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .16)", modal: "#323232", gradients: {
         bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#121212", backgroundDisabled: "rgba(255, 255, 255, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .09)", modal: "#323232", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#121212", backgroundDisabled: "rgba(255, 255, 255, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .16)", modal: "#323232", gradients: {
         bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
     } });
 

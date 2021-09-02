@@ -28,7 +28,7 @@ export const lightColors: Colors = {
   textDisabled: "rgba(0, 0, 0, .38)",
   textSubtle: "rgba(0, 0, 0, .60)",
   borderColor: "rgba(33, 33, 33, .12)",
-  card: "rgba(33, 33, 33, .03)",
+  card: "rgba(33, 33, 33, .16)",
   modal: "#323232",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
@@ -48,7 +48,7 @@ export const darkColors: Colors = {
   textDisabled: "rgba(255, 255, 255, .38)",
   textSubtle: "rgba(255, 255, 255, .60)",
   borderColor: "rgba(33, 33, 33, .12)",
-  card: "rgba(33, 33, 33, .09)",
+  card: "rgba(33, 33, 33, .16)",
   modal: "#323232",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
