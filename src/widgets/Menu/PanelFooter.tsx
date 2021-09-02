@@ -16,12 +16,12 @@ import { PanelProps, PushedProps } from "./types";
 interface Props extends PanelProps, PushedProps {}
 
 const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
-const { MoonIcon, SunIcon, LanguageIcon } = Icons;
+// const { MoonIcon, SunIcon, LanguageIcon } = Icons;
 
 const Container = styled.div`
   flex: none;
   padding: 8px 4px;
-  background-color: #D50000;
+  background-color: #C5D483;
   border-top: solid 2px rgba(133, 133, 133, 0.1);
 `;
 
@@ -59,7 +59,7 @@ const SocialEntry = styled.div`
 `;
 
 const MusicIcon = styled.a`
-  color: rgba(255, 255, 255, .60);
+  color: rgba(33, 33, 33, .60);
 `
 
 const anim = keyframes`
@@ -100,13 +100,13 @@ const MusicIconPlaying = styled.a`
   animation-duration: 5s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
-  color: #00ABE0;
+  color: #84D4CE;
 `
 
 const AudioPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false)
 
-  const audioRef = useRef(new Audio('/media/sandman.mp3'))
+  const audioRef = useRef(new Audio('/media/delirium.mp3'))
   // audioRef.current.autoplay = true OPTIONAL
   audioRef.current.loop = true
 

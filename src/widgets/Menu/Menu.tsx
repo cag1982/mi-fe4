@@ -34,7 +34,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   padding-right: 16px;
   width: 100%;
   height: ${MENU_HEIGHT}px;
-  background-color: #272727;
+  background-color: #FFF;
   z-index: 20;
   transform: translate3d(0, 0, 0);
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20);
