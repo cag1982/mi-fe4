@@ -18,7 +18,7 @@ export const brandColors = {
 export const lightColors: Colors = {
   ...baseColors,
   ...brandColors,
-  background: "#FFF",
+  background: "#F5F5F5",
   backgroundDisabled: "rgba(33, 33, 33, .38)",
   contrast: "rgba(33, 33, 33, .12)",
   invertedContrast: "#FFFFFF",
@@ -28,7 +28,7 @@ export const lightColors: Colors = {
   textDisabled: "rgba(0, 0, 0, .38)",
   textSubtle: "rgba(0, 0, 0, .60)",
   borderColor: "rgba(33, 33, 33, .12)",
-  card: "rgba(33, 33, 33, .16)",
+  card: "rgba(33, 33, 33, .5)",
   modal: "#e5e5e5",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
@@ -38,7 +38,7 @@ export const lightColors: Colors = {
 export const darkColors: Colors = {
   ...baseColors,
   ...brandColors,
-  background: "#121212",
+  background: "#F5F5F5",
   backgroundDisabled: "rgba(255, 255, 255, .38)",
   contrast: "rgba(33, 33, 33, .12)",
   invertedContrast: "#FFFFFF",
@@ -48,7 +48,7 @@ export const darkColors: Colors = {
   textDisabled: "rgba(255, 255, 255, .38)",
   textSubtle: "rgba(255, 255, 255, .60)",
   borderColor: "rgba(33, 33, 33, .12)",
-  card: "rgba(33, 33, 33, .16)",
+  card: "rgba(33, 33, 33, .5)",
   modal: "#e5e5e5",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",

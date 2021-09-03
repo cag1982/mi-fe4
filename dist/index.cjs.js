@@ -2612,12 +2612,9 @@ var PanelFooter = function (_a) {
 };
 var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$2, templateObject_5$1, templateObject_6, templateObject_7;
 
-var StyledPanel = styled__default['default'].div(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-right: 1px solid rgba(33, 33, 33, .12);\n\n  ", " {\n    width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-right: 1px solid rgba(33, 33, 33, .12);\n\n  ", " {\n    width: ", ";\n  }\n"])), function (_a) {
+var StyledPanel = styled__default['default'].div(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: #FFF;\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-right: 1px solid rgba(33, 33, 33, .12);\n\n  ", " {\n    width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: #FFF;\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-right: 1px solid rgba(33, 33, 33, .12);\n\n  ", " {\n    width: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? "80px" : 0);
-}, function (_a) {
-    var theme = _a.theme;
-    return theme.nav.background;
 }, function (_a) {
     var isPushed = _a.isPushed;
     return (isPushed ? SIDEBAR_WIDTH_FULL + "px" : 0);
@@ -2631,8 +2628,8 @@ var StyledPanel = styled__default['default'].div(templateObject_1$D || (template
     var isPushed = _a.isPushed;
     return (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px";
 });
-var StyledRugDoc = styled__default['default'].a(templateObject_2$d || (templateObject_2$d = __makeTemplateObject(["\n  padding: 16px 16px 0;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: 8px;\n    right: 6px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #FFB74D;\n    border-radius: 6px;\n    color: #fff;\n    text-shadow:\n      0 0 7px #fff,\n      0 0 10px #fff,\n      0 0 21px #fff,\n      0 0 42px #0fa,\n      0 0 82px #0fa,\n      0 0 92px #0fa,\n      0 0 102px #0fa,\n      0 0 151px #0fa;\n  }\n"], ["\n  padding: 16px 16px 0;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: 8px;\n    right: 6px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #FFB74D;\n    border-radius: 6px;\n    color: #fff;\n    text-shadow:\n      0 0 7px #fff,\n      0 0 10px #fff,\n      0 0 21px #fff,\n      0 0 42px #0fa,\n      0 0 82px #0fa,\n      0 0 92px #0fa,\n      0 0 102px #0fa,\n      0 0 151px #0fa;\n  }\n"])));
-var StyledDefiYield = styled__default['default'].a(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  padding: 4px 8px 0;\n  margin: 0 12px 12px;\n  background-color: rgba(255, 255, 255, 0.25);\n  border-radius: 6px;\n  svg {\n    width: 100%;\n    height: auto;\n  }\n"], ["\n  padding: 4px 8px 0;\n  margin: 0 12px 12px;\n  background-color: rgba(255, 255, 255, 0.25);\n  border-radius: 6px;\n  svg {\n    width: 100%;\n    height: auto;\n  }\n"])));
+var StyledRugDoc = styled__default['default'].a(templateObject_2$d || (templateObject_2$d = __makeTemplateObject(["\n  padding: 16px 16px 0;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: 14px;\n    right: 12px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n"], ["\n  padding: 16px 16px 0;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: 14px;\n    right: 12px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n"])));
+var StyledDefiYield = styled__default['default'].a(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  padding: 4px 8px 0;\n  margin: 0 12px 12px;\n  background-color: rgba(0, 0, 0, 0.25);\n  border-radius: 6px;\n  svg {\n    width: 100%;\n    height: auto;\n  }\n"], ["\n  padding: 4px 8px 0;\n  margin: 0 12px 12px;\n  background-color: rgba(0, 0, 0, 0.25);\n  border-radius: 6px;\n  svg {\n    width: 100%;\n    height: auto;\n  }\n"])));
 var Panel = function (props) {
     var isPushed = props.isPushed, showMenu = props.showMenu, rugDocLink = props.rugDocLink, defiYieldLink = props.defiYieldLink;
     return (React__default['default'].createElement(StyledPanel, { isPushed: isPushed, showMenu: showMenu },
@@ -2921,7 +2918,22 @@ styled__default['default'].span(templateObject_6$1 || (templateObject_6$1 = __ma
     var theme = _a.theme;
     return theme.mediaQueries.lg;
 });
-var PaladinTag = styled__default['default'](Tag)(templateObject_7$1 || (templateObject_7$1 = __makeTemplateObject(["\n  border-color: #FFB74D;\n  color: #fff;\n  text-shadow:\n    0 0 7px #fff,\n    0 0 10px #fff,\n    0 0 21px #fff,\n    0 0 42px #0fa,\n    0 0 82px #0fa,\n    0 0 92px #0fa,\n    0 0 102px #0fa,\n    0 0 151px #0fa;\n\n  svg {\n    fill: #FFB74D;\n  }\n"], ["\n  border-color: #FFB74D;\n  color: #fff;\n  text-shadow:\n    0 0 7px #fff,\n    0 0 10px #fff,\n    0 0 21px #fff,\n    0 0 42px #0fa,\n    0 0 82px #0fa,\n    0 0 92px #0fa,\n    0 0 102px #0fa,\n    0 0 151px #0fa;\n\n  svg {\n    fill: #FFB74D;\n  }\n"])));
+// const PaladinTag = styled(Tag)`
+//   border-color: #FFB74D;
+//   color: #fff;
+//   text-shadow:
+//     0 0 7px #fff,
+//     0 0 10px #fff,
+//     0 0 21px #fff,
+//     0 0 42px #0fa,
+//     0 0 82px #0fa,
+//     0 0 92px #0fa,
+//     0 0 102px #0fa,
+//     0 0 151px #0fa;
+//   svg {
+//     fill: #FFB74D;
+//   }
+// `
 var Menu = function (_a) {
     var _b;
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, rugDocLink = _a.rugDocLink, defiYieldLink = _a.defiYieldLink, paladinLink = _a.paladinLink, paladinText = _a.paladinText, children = _a.children;
@@ -2964,8 +2976,8 @@ var Menu = function (_a) {
         React__default['default'].createElement(StyledNav, { showMenu: showMenu },
             React__default['default'].createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React__default['default'].createElement(Flex, { alignItems: "center" },
-                paladinLink ? (React__default['default'].createElement("a", { href: paladinLink, target: "_blank", rel: "noreferrer", style: { marginRight: '6px' } },
-                    React__default['default'].createElement(PaladinTag, { startIcon: React__default['default'].createElement(FeaturesIcon, null), outline: true }, paladinText))) : null,
+                React__default['default'].createElement("a", { href: paladinLink, target: "_blank", rel: "noreferrer", style: { marginRight: '6px' } },
+                    React__default['default'].createElement(Tag, { startIcon: React__default['default'].createElement(FeaturesIcon, null), variant: "secondary", outline: true }, paladinText || 'PALADIN AUDITED')),
                 React__default['default'].createElement(UserBlock, { account: account, login: login, logout: logout }),
                 profile && React__default['default'].createElement(Avatar, { profile: profile }))),
         React__default['default'].createElement(BodyWrapper, null,
@@ -2973,7 +2985,7 @@ var Menu = function (_a) {
             React__default['default'].createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React__default['default'].createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$H, templateObject_2$g, templateObject_3$9, templateObject_4$3, templateObject_5$2, templateObject_6$1, templateObject_7$1;
+var templateObject_1$H, templateObject_2$g, templateObject_3$9, templateObject_4$3, templateObject_5$2, templateObject_6$1;
 
 var ToastAction = function (_a) {
     var action = _a.action;
@@ -3074,10 +3086,10 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FFF", backgroundDisabled: "rgba(33, 33, 33, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(0, 0, 0, .87)", textDisabled: "rgba(0, 0, 0, .38)", textSubtle: "rgba(0, 0, 0, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .16)", modal: "#e5e5e5", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#F5F5F5", backgroundDisabled: "rgba(33, 33, 33, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(0, 0, 0, .87)", textDisabled: "rgba(0, 0, 0, .38)", textSubtle: "rgba(0, 0, 0, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .5)", modal: "#e5e5e5", gradients: {
         bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#121212", backgroundDisabled: "rgba(255, 255, 255, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .16)", modal: "#e5e5e5", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#F5F5F5", backgroundDisabled: "rgba(255, 255, 255, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .5)", modal: "#e5e5e5", gradients: {
         bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
     } });
 

@@ -19,7 +19,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   flex-direction: column;
   justify-content: space-between;
   flex-shrink: 0;
-  background-color: ${({ theme }) => theme.nav.background};
+  background-color: #FFF;
   width: ${({ isPushed }) => (isPushed ? `${SIDEBAR_WIDTH_FULL}px` : 0)};
   height: 100vh;
   transition: padding-top 0.2s, width 0.2s;
@@ -43,29 +43,21 @@ const StyledRugDoc = styled.a`
 
   span {
     position: absolute;
-    top: 8px;
-    right: 6px;
+    top: 14px;
+    right: 12px;
     font-size: 10px;
     padding: 4px 8px;
-    border: 1px solid #FFB74D;
+    border: 1px solid #84D4CE;
     border-radius: 6px;
-    color: #fff;
-    text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #0fa,
-      0 0 82px #0fa,
-      0 0 92px #0fa,
-      0 0 102px #0fa,
-      0 0 151px #0fa;
-  }
+    color: #84D4CE;
+    background-color: rgba(33, 33, 33, 0.5);
+    font-weight: bold;
 `
 
 const StyledDefiYield = styled.a`
   padding: 4px 8px 0;
   margin: 0 12px 12px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
   border-radius: 6px;
   svg {
     width: 100%;

@@ -73,23 +73,23 @@ const DesktopOnlyText = styled.span`
   }
 `;
 
-const PaladinTag = styled(Tag)`
-  border-color: #FFB74D;
-  color: #fff;
-  text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa;
+// const PaladinTag = styled(Tag)`
+//   border-color: #FFB74D;
+//   color: #fff;
+//   text-shadow:
+//     0 0 7px #fff,
+//     0 0 10px #fff,
+//     0 0 21px #fff,
+//     0 0 42px #0fa,
+//     0 0 82px #0fa,
+//     0 0 92px #0fa,
+//     0 0 102px #0fa,
+//     0 0 151px #0fa;
 
-  svg {
-    fill: #FFB74D;
-  }
-`
+//   svg {
+//     fill: #FFB74D;
+//   }
+// `
 
 const Menu: React.FC<NavProps> = ({
   account,
@@ -158,11 +158,9 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
         <Flex alignItems="center">
-          {paladinLink ? (
             <a href={paladinLink} target="_blank" rel="noreferrer" style={{ marginRight: '6px' }}>
-              <PaladinTag startIcon={<FeaturesIcon />} outline>{paladinText}</PaladinTag>
+              <Tag startIcon={<FeaturesIcon />} variant="secondary" outline>{paladinText || 'PALADIN AUDITED'}</Tag>
             </a>
-          ) : null}
           <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
         </Flex>
