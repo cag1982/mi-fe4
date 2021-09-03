@@ -158,9 +158,11 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
         <Flex alignItems="center">
+          {paladinLink ? (
             <a href={paladinLink} target="_blank" rel="noreferrer" style={{ marginRight: '6px' }}>
               <Tag startIcon={<FeaturesIcon />} variant="secondary" outline>{paladinText || 'PALADIN AUDITED'}</Tag>
             </a>
+          ) : null}
           <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
         </Flex>
