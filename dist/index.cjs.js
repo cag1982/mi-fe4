@@ -2404,22 +2404,22 @@ var socials = [
     {
         label: "Github",
         icon: "GithubIcon",
-        href: "https://github.com/SandmanFarmio",
+        href: "https://github.com/sandmanfinance",
     },
     {
         label: "Docs",
         icon: "DocsIcon",
-        href: "https://docs.sandman.farm",
+        href: "https://docs.delirium.sandman.finance/",
     },
     {
         label: "Medium",
         icon: "MediumIcon",
-        href: "https://sandmanfarm.medium.com/",
+        href: "https://sandmanfinance.medium.com/",
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/sandmanfarm",
+        href: "https://twitter.com/sandman_finance",
     },
     {
         label: "Telegram",
@@ -2427,7 +2427,7 @@ var socials = [
         items: [
             {
                 label: "Official",
-                href: "https://t.me/SandManFarm",
+                href: "https://t.me/SandMan_Finance",
             },
             //   {
             //     label: "Spanish",
@@ -2631,11 +2631,11 @@ var StyledPanel = styled__default['default'].div(templateObject_1$D || (template
 var StyledRugDoc = styled__default['default'].a(templateObject_2$d || (templateObject_2$d = __makeTemplateObject(["\n  padding: 16px 16px 0;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: 14px;\n    right: 12px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n"], ["\n  padding: 16px 16px 0;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: 14px;\n    right: 12px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n"])));
 var StyledDefiYield = styled__default['default'].a(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  padding: 4px 8px 0;\n  margin: 0 12px 12px;\n  background-color: rgba(0, 0, 0, 0.25);\n  border-radius: 6px;\n  svg {\n    width: 100%;\n    height: auto;\n  }\n"], ["\n  padding: 4px 8px 0;\n  margin: 0 12px 12px;\n  background-color: rgba(0, 0, 0, 0.25);\n  border-radius: 6px;\n  svg {\n    width: 100%;\n    height: auto;\n  }\n"])));
 var Panel = function (props) {
-    var isPushed = props.isPushed, showMenu = props.showMenu, rugDocLink = props.rugDocLink, defiYieldLink = props.defiYieldLink;
+    var isPushed = props.isPushed, showMenu = props.showMenu, rugDocLink = props.rugDocLink, rugDocText = props.rugDocText, defiYieldLink = props.defiYieldLink;
     return (React__default['default'].createElement(StyledPanel, { isPushed: isPushed, showMenu: showMenu },
         React__default['default'].createElement(PanelBody, __assign({}, props)),
         rugDocLink ? (React__default['default'].createElement(StyledRugDoc, { href: rugDocLink, target: "_blank", rel: "noreferrer" },
-            React__default['default'].createElement("span", null, "KYC / LOW RISK"),
+            rugDocText ? (React__default['default'].createElement("span", null, rugDocText)) : null,
             React__default['default'].createElement("img", { src: "https://rugdoc.io/assets/2021/06/rugdoc-review-badge-with-glow.png" }))) : null,
         defiYieldLink ? (React__default['default'].createElement(StyledDefiYield, { href: defiYieldLink, target: "_blank", rel: "noreferrer" },
             React__default['default'].createElement("svg", { viewBox: "0 0 211 50", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
@@ -2936,7 +2936,7 @@ styled__default['default'].span(templateObject_6$1 || (templateObject_6$1 = __ma
 // `
 var Menu = function (_a) {
     var _b;
-    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, rugDocLink = _a.rugDocLink, defiYieldLink = _a.defiYieldLink, paladinLink = _a.paladinLink, paladinText = _a.paladinText, children = _a.children;
+    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, rugDocLink = _a.rugDocLink, rugDocText = _a.rugDocText, defiYieldLink = _a.defiYieldLink, paladinLink = _a.paladinLink, paladinText = _a.paladinText, children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
     var _c = React.useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
@@ -2981,7 +2981,7 @@ var Menu = function (_a) {
                 React__default['default'].createElement(UserBlock, { account: account, login: login, logout: logout }),
                 profile && React__default['default'].createElement(Avatar, { profile: profile }))),
         React__default['default'].createElement(BodyWrapper, null,
-            React__default['default'].createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink, rugDocLink: rugDocLink, defiYieldLink: defiYieldLink }),
+            React__default['default'].createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink, rugDocLink: rugDocLink, rugDocText: rugDocText, defiYieldLink: defiYieldLink }),
             React__default['default'].createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React__default['default'].createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
@@ -3086,10 +3086,10 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#F5F5F5", backgroundDisabled: "rgba(33, 33, 33, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(0, 0, 0, .87)", textDisabled: "rgba(0, 0, 0, .38)", textSubtle: "rgba(0, 0, 0, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .33)", modal: "#e5e5e5", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#F5F5F5", backgroundDisabled: "rgba(33, 33, 33, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(0, 0, 0, .87)", textDisabled: "rgba(0, 0, 0, .38)", textSubtle: "rgba(0, 0, 0, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .33)", modal: "#f5f5f5", gradients: {
         bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#F5F5F5", backgroundDisabled: "rgba(255, 255, 255, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .33)", modal: "#e5e5e5", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#F5F5F5", backgroundDisabled: "rgba(255, 255, 255, .38)", contrast: "rgba(33, 33, 33, .12)", invertedContrast: "#FFFFFF", input: "rgba(33, 33, 33, .12)", tertiary: "rgba(33, 33, 33, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .33)", modal: "#f5f5f5", gradients: {
         bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
     } });
 

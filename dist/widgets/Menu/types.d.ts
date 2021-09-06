@@ -46,6 +46,7 @@ export interface PanelProps {
     setLang: (lang: LangType) => void;
     links: Array<MenuEntry>;
     rugDocLink: string;
+    rugDocText: string;
     defiYieldLink: string;
     priceLink: string;
 }

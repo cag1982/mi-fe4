@@ -66,13 +66,13 @@ const StyledDefiYield = styled.a`
 `
 
 const Panel: React.FC<Props> = (props) => {
-  const { isPushed, showMenu, rugDocLink, defiYieldLink } = props;
+  const { isPushed, showMenu, rugDocLink, rugDocText, defiYieldLink } = props;
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
       {rugDocLink ? (
         <StyledRugDoc href={rugDocLink} target="_blank" rel="noreferrer">
-          <span>KYC / LOW RISK</span>
+          {rugDocText ? (<span>{rugDocText}</span>) : null}
           <img src="https://rugdoc.io/assets/2021/06/rugdoc-review-badge-with-glow.png" />
         </StyledRugDoc>
       ) : null}
