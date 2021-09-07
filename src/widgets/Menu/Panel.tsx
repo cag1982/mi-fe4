@@ -70,7 +70,7 @@ const Panel: React.FC<Props> = (props) => {
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
-      {rugDocLink ? (
+      {showMenu && isPushed && rugDocLink ? (
         <StyledRugDoc href={rugDocLink} target="_blank" rel="noreferrer">
           {rugDocText ? (<span>{rugDocText}</span>) : null}
           <img src="https://rugdoc.io/assets/2021/06/rugdoc-review-badge-with-glow.png" />
