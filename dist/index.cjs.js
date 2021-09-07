@@ -2450,7 +2450,7 @@ var SIDEBAR_WIDTH_FULL = 240;
 var SIDEBAR_WIDTH_REDUCED = 56;
 
 var rainbowAnimation = styled.keyframes(templateObject_1$z || (templateObject_1$z = __makeTemplateObject(["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"], ["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"])));
-var LinkLabel = styled__default['default'].div(templateObject_2$a || (templateObject_2$a = __makeTemplateObject(["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"], ["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"])), function (_a) {
+var LinkLabel = styled__default['default'].div(templateObject_2$a || (templateObject_2$a = __makeTemplateObject(["\n  color: ", ";\n  text-shadow: none;\n  transition: color 0.4s;\n  flex-grow: 1;\n"], ["\n  color: ", ";\n  text-shadow: none;\n  transition: color 0.4s;\n  flex-grow: 1;\n"])), function (_a) {
     var isPushed = _a.isPushed, theme = _a.theme;
     return (isPushed ? theme.colors.textSubtle : "transparent");
 });
@@ -2634,7 +2634,7 @@ var Panel = function (props) {
     var isPushed = props.isPushed, showMenu = props.showMenu, rugDocLink = props.rugDocLink, rugDocText = props.rugDocText, defiYieldLink = props.defiYieldLink;
     return (React__default['default'].createElement(StyledPanel, { isPushed: isPushed, showMenu: showMenu },
         React__default['default'].createElement(PanelBody, __assign({}, props)),
-        rugDocLink ? (React__default['default'].createElement(StyledRugDoc, { href: rugDocLink, target: "_blank", rel: "noreferrer" },
+        showMenu && isPushed && rugDocLink ? (React__default['default'].createElement(StyledRugDoc, { href: rugDocLink, target: "_blank", rel: "noreferrer" },
             rugDocText ? (React__default['default'].createElement("span", null, rugDocText)) : null,
             React__default['default'].createElement("img", { src: "https://rugdoc.io/assets/2021/06/rugdoc-review-badge-with-glow.png" }))) : null,
         defiYieldLink ? (React__default['default'].createElement(StyledDefiYield, { href: defiYieldLink, target: "_blank", rel: "noreferrer" },
