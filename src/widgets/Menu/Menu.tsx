@@ -109,6 +109,8 @@ const Menu: React.FC<NavProps> = ({
   defiYieldLink,
   paladinLink,
   paladinText,
+  auditLink,
+  auditText,
   children,
 }) => {
   const { isXl } = useMatchBreakpoints();
@@ -159,9 +161,9 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
         <Flex alignItems="center">
-          {paladinLink ? (
-            <a href={paladinLink} target="_blank" rel="noreferrer" style={{ marginRight: '6px' }}>
-              <Tag startIcon={<FeaturesIcon />} variant="secondary" outline>{paladinText || 'PALADIN AUDITED'}</Tag>
+          {auditLink ? (
+            <a href={auditLink} target="_blank" rel="noreferrer" style={{ marginRight: '6px' }}>
+              <Tag startIcon={<FeaturesIcon />} variant="secondary" outline>{auditText}</Tag>
             </a>
           ) : null}
           <UserBlock account={account} login={login} logout={logout} />
@@ -184,6 +186,8 @@ const Menu: React.FC<NavProps> = ({
           priceLink={priceLink}
           rugDocLink={rugDocLink}
           rugDocText={rugDocText}
+          paladinLink={paladinLink}
+          paladinText={paladinText}
           defiYieldLink={defiYieldLink}
         />
         <Inner isPushed={isPushed} showMenu={showMenu}>

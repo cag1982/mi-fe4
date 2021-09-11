@@ -55,6 +55,8 @@ export interface PanelProps {
   links: Array<MenuEntry>;
   rugDocLink: string;
   rugDocText: string;
+  paladinLink: string;
+  paladinText: string;
   defiYieldLink: string;
   priceLink: string;
 }
@@ -63,7 +65,7 @@ export interface NavProps extends PanelProps {
   account?: string;
   login: Login;
   profile?: Profile;
-  paladinLink: string;
-  paladinText: string;
+  auditLink: string;
+  auditText: string;
   logout: () => void;
 }

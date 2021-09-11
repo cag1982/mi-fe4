@@ -2533,7 +2533,7 @@ var PanelBody = function (_a) {
                 React.createElement(LinkLabel, { isPushed: isPushed },
                     entry.label,
                     " ",
-                    entry.tag ? (React.createElement(Tag, { style: { fontSize: '12px', padding: '0 4px', lineHeight: '1', height: '20px', borderSize: '1px', marginLeft: '4px' }, outline: true, variant: entry.tag.variant }, entry.tag.title)) : null))));
+                    isPushed && entry.tag ? (React.createElement(Tag, { style: { fontSize: '12px', padding: '0 4px', lineHeight: '1', height: '20px', borderSize: '1px', marginLeft: '4px' }, outline: true, variant: entry.tag.variant }, entry.tag.title)) : null))));
     })));
 };
 var templateObject_1$B;
@@ -2615,15 +2615,19 @@ var StyledPanel = styled.div(templateObject_1$D || (templateObject_1$D = __makeT
     var isPushed = _a.isPushed;
     return (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px";
 });
-var StyledRugDoc = styled.a(templateObject_2$d || (templateObject_2$d = __makeTemplateObject(["\n  padding: 16px 16px 0;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: 14px;\n    right: 12px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n"], ["\n  padding: 16px 16px 0;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: 14px;\n    right: 12px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n"])));
-var StyledDefiYield = styled.a(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  padding: 4px 8px 0;\n  margin: 0 12px 12px;\n  background-color: rgba(0, 0, 0, 0.25);\n  border-radius: 6px;\n  svg {\n    width: 100%;\n    height: auto;\n  }\n"], ["\n  padding: 4px 8px 0;\n  margin: 0 12px 12px;\n  background-color: rgba(0, 0, 0, 0.25);\n  border-radius: 6px;\n  svg {\n    width: 100%;\n    height: auto;\n  }\n"])));
+var StyledRugDoc = styled.a(templateObject_2$d || (templateObject_2$d = __makeTemplateObject(["\n  padding: 16px 16px 0;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: 14px;\n    right: 12px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n  }\n"], ["\n  padding: 16px 16px 0;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: 14px;\n    right: 12px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n  }\n"])));
+var StyledPaladin = styled.a(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  padding: 16px 16px 8px;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: 4px;\n    right: 8px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n  }\n"], ["\n  padding: 16px 16px 8px;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: 4px;\n    right: 8px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n  }\n"])));
+var StyledDefiYield = styled.a(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  padding: 4px 8px 0;\n  margin: 0 12px 12px;\n  background-color: rgba(0, 0, 0, 0.25);\n  border-radius: 6px;\n  svg {\n    width: 100%;\n    height: auto;\n  }\n"], ["\n  padding: 4px 8px 0;\n  margin: 0 12px 12px;\n  background-color: rgba(0, 0, 0, 0.25);\n  border-radius: 6px;\n  svg {\n    width: 100%;\n    height: auto;\n  }\n"])));
 var Panel = function (props) {
-    var isPushed = props.isPushed, showMenu = props.showMenu, rugDocLink = props.rugDocLink, rugDocText = props.rugDocText, defiYieldLink = props.defiYieldLink;
+    var isPushed = props.isPushed, showMenu = props.showMenu, rugDocLink = props.rugDocLink, rugDocText = props.rugDocText, paladinLink = props.paladinLink, paladinText = props.paladinText, defiYieldLink = props.defiYieldLink;
     return (React.createElement(StyledPanel, { isPushed: isPushed, showMenu: showMenu },
         React.createElement(PanelBody, __assign({}, props)),
         showMenu && isPushed && rugDocLink ? (React.createElement(StyledRugDoc, { href: rugDocLink, target: "_blank", rel: "noreferrer" },
             rugDocText ? (React.createElement("span", null, rugDocText)) : null,
             React.createElement("img", { src: "https://rugdoc.io/assets/2021/06/rugdoc-review-badge-with-glow.png" }))) : null,
+        showMenu && isPushed && paladinLink ? (React.createElement(StyledPaladin, { href: paladinLink, target: "_blank", rel: "noreferrer" },
+            paladinText ? (React.createElement("span", null, paladinText)) : null,
+            React.createElement("img", { src: "https://paladinsec.co/pld/assets/audited-by-paladin-long.svg", alt: "Paladin Audited" }))) : null,
         defiYieldLink ? (React.createElement(StyledDefiYield, { href: defiYieldLink, target: "_blank", rel: "noreferrer" },
             React.createElement("svg", { viewBox: "0 0 211 50", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                 React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M28.6184 1.26616L42.56 9.04079C45.5873 10.729 47.4522 13.8489 47.4522 17.2254V32.7746C47.4522 36.1511 45.5873 39.271 42.56 40.9592L28.6184 48.7338C25.591 50.4221 21.8612 50.4221 18.8339 48.7338L4.89224 40.9592C1.86491 39.271 0 36.1511 0 32.7746L0 17.2254C0 13.8489 1.86491 10.729 4.89224 9.04079L18.8339 1.26616C21.8612 -0.422052 25.591 -0.422052 28.6184 1.26616Z", fill: "#1452F0" }),
@@ -2639,7 +2643,7 @@ var Panel = function (props) {
                 React.createElement("path", { d: "M210.215 24.3962C210.215 25.9775 209.918 27.3463 209.323 28.5026C208.744 29.6418 207.971 30.5855 207.002 31.3337C206.049 32.0648 204.97 32.609 203.762 32.966C202.555 33.3061 201.331 33.4762 200.089 33.4762H193.356V15.4182H199.885C201.161 15.4182 202.419 15.5712 203.66 15.8773C204.902 16.1664 206.007 16.6595 206.976 17.3566C207.945 18.0368 208.727 18.955 209.323 20.1112C209.918 21.2675 210.215 22.6958 210.215 24.3962ZM205.675 24.3962C205.675 23.376 205.505 22.5343 205.165 21.8711C204.842 21.191 204.4 20.6554 203.839 20.2643C203.295 19.8562 202.666 19.5671 201.951 19.3971C201.254 19.227 200.532 19.142 199.783 19.142H197.615V29.7013H199.681C200.464 29.7013 201.212 29.6163 201.926 29.4463C202.657 29.2592 203.295 28.9617 203.839 28.5536C204.4 28.1455 204.842 27.6014 205.165 26.9212C205.505 26.2411 205.675 25.3994 205.675 24.3962Z", fill: "#050F19" })))) : null,
         React.createElement(PanelFooter, __assign({}, props))));
 };
-var templateObject_1$D, templateObject_2$d, templateObject_3$8;
+var templateObject_1$D, templateObject_2$d, templateObject_3$8, templateObject_4$3;
 
 var Icon$1l = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
@@ -2887,7 +2891,7 @@ var StyledNav = styled.nav(templateObject_2$g || (templateObject_2$g = __makeTem
     return (showMenu ? 0 : "-" + MENU_HEIGHT + "px");
 }, MENU_HEIGHT);
 var BodyWrapper = styled.div(templateObject_3$9 || (templateObject_3$9 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
-var Inner = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n"])), function (_a) {
+var Inner = styled.div(templateObject_4$4 || (templateObject_4$4 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? MENU_HEIGHT + "px" : 0);
 }, function (_a) {
@@ -2923,7 +2927,7 @@ styled.span(templateObject_6$1 || (templateObject_6$1 = __makeTemplateObject(["\
 // `
 var Menu = function (_a) {
     var _b;
-    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, rugDocLink = _a.rugDocLink, rugDocText = _a.rugDocText, defiYieldLink = _a.defiYieldLink, paladinLink = _a.paladinLink, paladinText = _a.paladinText, children = _a.children;
+    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, rugDocLink = _a.rugDocLink, rugDocText = _a.rugDocText, defiYieldLink = _a.defiYieldLink, paladinLink = _a.paladinLink, paladinText = _a.paladinText, auditLink = _a.auditLink, auditText = _a.auditText, children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
     var _c = useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
@@ -2963,16 +2967,16 @@ var Menu = function (_a) {
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React.createElement(Flex, { alignItems: "center" },
-                paladinLink ? (React.createElement("a", { href: paladinLink, target: "_blank", rel: "noreferrer", style: { marginRight: '6px' } },
-                    React.createElement(Tag, { startIcon: React.createElement(FeaturesIcon, null), variant: "secondary", outline: true }, paladinText || 'PALADIN AUDITED'))) : null,
+                auditLink ? (React.createElement("a", { href: auditLink, target: "_blank", rel: "noreferrer", style: { marginRight: '6px' } },
+                    React.createElement(Tag, { startIcon: React.createElement(FeaturesIcon, null), variant: "secondary", outline: true }, auditText))) : null,
                 React.createElement(UserBlock, { account: account, login: login, logout: logout }),
                 profile && React.createElement(Avatar, { profile: profile }))),
         React.createElement(BodyWrapper, null,
-            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink, rugDocLink: rugDocLink, rugDocText: rugDocText, defiYieldLink: defiYieldLink }),
+            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink, rugDocLink: rugDocLink, rugDocText: rugDocText, paladinLink: paladinLink, paladinText: paladinText, defiYieldLink: defiYieldLink }),
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$H, templateObject_2$g, templateObject_3$9, templateObject_4$3, templateObject_5$2, templateObject_6$1;
+var templateObject_1$H, templateObject_2$g, templateObject_3$9, templateObject_4$4, templateObject_5$2, templateObject_6$1;
 
 var ToastAction = function (_a) {
     var action = _a.action;

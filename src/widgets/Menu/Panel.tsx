@@ -52,6 +52,29 @@ const StyledRugDoc = styled.a`
     color: #84D4CE;
     background-color: rgba(33, 33, 33, 0.5);
     font-weight: bold;
+  }
+`
+
+const StyledPaladin = styled.a`
+  padding: 16px 16px 8px;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  span {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    font-size: 10px;
+    padding: 4px 8px;
+    border: 1px solid #84D4CE;
+    border-radius: 6px;
+    color: #84D4CE;
+    background-color: rgba(33, 33, 33, 0.5);
+    font-weight: bold;
+  }
 `
 
 const StyledDefiYield = styled.a`
@@ -66,7 +89,7 @@ const StyledDefiYield = styled.a`
 `
 
 const Panel: React.FC<Props> = (props) => {
-  const { isPushed, showMenu, rugDocLink, rugDocText, defiYieldLink } = props;
+  const { isPushed, showMenu, rugDocLink, rugDocText, paladinLink, paladinText, defiYieldLink } = props;
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
@@ -75,6 +98,12 @@ const Panel: React.FC<Props> = (props) => {
           {rugDocText ? (<span>{rugDocText}</span>) : null}
           <img src="https://rugdoc.io/assets/2021/06/rugdoc-review-badge-with-glow.png" />
         </StyledRugDoc>
+      ) : null}
+      {showMenu && isPushed && paladinLink ? (
+        <StyledPaladin href={paladinLink} target="_blank" rel="noreferrer">
+          {paladinText ? (<span>{paladinText}</span>) : null}
+          <img src="https://paladinsec.co/pld/assets/audited-by-paladin-long.svg" alt="Paladin Audited" />
+        </StyledPaladin>
       ) : null}
       {defiYieldLink ? (
         <StyledDefiYield href={defiYieldLink} target="_blank" rel="noreferrer">

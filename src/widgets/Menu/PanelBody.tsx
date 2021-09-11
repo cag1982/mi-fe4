@@ -60,7 +60,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           <MenuEntry key={entry.label} isActive={entry.href === location.pathname} className={calloutClass}>
             <MenuLink href={entry.href} onClick={handleClick}>
               {iconElement}
-              <LinkLabel isPushed={isPushed}>{entry.label} {entry.tag ? (<Tag style={{ fontSize: '12px', padding: '0 4px', lineHeight: '1', height: '20px', borderSize: '1px', marginLeft: '4px' }} outline variant={entry.tag.variant}>{entry.tag.title}</Tag>) : null}</LinkLabel>
+              <LinkLabel isPushed={isPushed}>{entry.label} {isPushed && entry.tag ? (<Tag style={{ fontSize: '12px', padding: '0 4px', lineHeight: '1', height: '20px', borderSize: '1px', marginLeft: '4px' }} outline variant={entry.tag.variant}>{entry.tag.title}</Tag>) : null}</LinkLabel>
             </MenuLink>
           </MenuEntry>
         );
