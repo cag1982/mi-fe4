@@ -34,7 +34,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
 `;
 
 const StyledRugDoc = styled.a`
-  padding: 16px 16px 0;
+  padding: 0 16px;
   position: relative;
 
   img {
@@ -43,7 +43,7 @@ const StyledRugDoc = styled.a`
 
   span {
     position: absolute;
-    top: 14px;
+    top: 0;
     right: 12px;
     font-size: 10px;
     padding: 4px 8px;
@@ -56,7 +56,7 @@ const StyledRugDoc = styled.a`
 `
 
 const StyledPaladin = styled.a`
-  padding: 16px 16px 8px;
+  padding: 0 16px 8px;
   position: relative;
 
   img {
@@ -65,7 +65,7 @@ const StyledPaladin = styled.a`
 
   span {
     position: absolute;
-    top: 4px;
+    top: -14px;
     right: 8px;
     font-size: 10px;
     padding: 4px 8px;
@@ -78,7 +78,7 @@ const StyledPaladin = styled.a`
 `
 
 const StyledDefiYield = styled.a`
-  padding: 4px 8px 0;
+  padding: 8px 8px 0;
   margin: 0 12px 12px;
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 6px;
