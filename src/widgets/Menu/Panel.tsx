@@ -93,13 +93,13 @@ const Panel: React.FC<Props> = (props) => {
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
-      {showMenu && isPushed && rugDocLink ? (
+      {isPushed && rugDocLink ? (
         <StyledRugDoc href={rugDocLink} target="_blank" rel="noreferrer">
           {rugDocText ? (<span>{rugDocText}</span>) : null}
           <img src="https://rugdoc.io/assets/2021/06/rugdoc-review-badge-with-glow.png" />
         </StyledRugDoc>
       ) : null}
-      {showMenu && isPushed && paladinLink ? (
+      {isPushed && paladinLink ? (
         <StyledPaladin href={paladinLink} target="_blank" rel="noreferrer">
           {paladinText ? (<span>{paladinText}</span>) : null}
           <img src="https://paladinsec.co/pld/assets/audited-by-paladin-long.svg" alt="Paladin Audited" />

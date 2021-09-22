@@ -2635,10 +2635,10 @@ var Panel = function (props) {
     var isPushed = props.isPushed, showMenu = props.showMenu, rugDocLink = props.rugDocLink, rugDocText = props.rugDocText, paladinLink = props.paladinLink, paladinText = props.paladinText, defiYieldLink = props.defiYieldLink;
     return (React__default['default'].createElement(StyledPanel, { isPushed: isPushed, showMenu: showMenu },
         React__default['default'].createElement(PanelBody, __assign({}, props)),
-        showMenu && isPushed && rugDocLink ? (React__default['default'].createElement(StyledRugDoc, { href: rugDocLink, target: "_blank", rel: "noreferrer" },
+        isPushed && rugDocLink ? (React__default['default'].createElement(StyledRugDoc, { href: rugDocLink, target: "_blank", rel: "noreferrer" },
             rugDocText ? (React__default['default'].createElement("span", null, rugDocText)) : null,
             React__default['default'].createElement("img", { src: "https://rugdoc.io/assets/2021/06/rugdoc-review-badge-with-glow.png" }))) : null,
-        showMenu && isPushed && paladinLink ? (React__default['default'].createElement(StyledPaladin, { href: paladinLink, target: "_blank", rel: "noreferrer" },
+        isPushed && paladinLink ? (React__default['default'].createElement(StyledPaladin, { href: paladinLink, target: "_blank", rel: "noreferrer" },
             paladinText ? (React__default['default'].createElement("span", null, paladinText)) : null,
             React__default['default'].createElement("img", { src: "https://paladinsec.co/pld/assets/audited-by-paladin-long.svg", alt: "Paladin Audited" }))) : null,
         defiYieldLink ? (React__default['default'].createElement(StyledDefiYield, { href: defiYieldLink, target: "_blank", rel: "noreferrer" },

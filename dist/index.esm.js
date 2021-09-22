@@ -2622,10 +2622,10 @@ var Panel = function (props) {
     var isPushed = props.isPushed, showMenu = props.showMenu, rugDocLink = props.rugDocLink, rugDocText = props.rugDocText, paladinLink = props.paladinLink, paladinText = props.paladinText, defiYieldLink = props.defiYieldLink;
     return (React.createElement(StyledPanel, { isPushed: isPushed, showMenu: showMenu },
         React.createElement(PanelBody, __assign({}, props)),
-        showMenu && isPushed && rugDocLink ? (React.createElement(StyledRugDoc, { href: rugDocLink, target: "_blank", rel: "noreferrer" },
+        isPushed && rugDocLink ? (React.createElement(StyledRugDoc, { href: rugDocLink, target: "_blank", rel: "noreferrer" },
             rugDocText ? (React.createElement("span", null, rugDocText)) : null,
             React.createElement("img", { src: "https://rugdoc.io/assets/2021/06/rugdoc-review-badge-with-glow.png" }))) : null,
-        showMenu && isPushed && paladinLink ? (React.createElement(StyledPaladin, { href: paladinLink, target: "_blank", rel: "noreferrer" },
+        isPushed && paladinLink ? (React.createElement(StyledPaladin, { href: paladinLink, target: "_blank", rel: "noreferrer" },
             paladinText ? (React.createElement("span", null, paladinText)) : null,
             React.createElement("img", { src: "https://paladinsec.co/pld/assets/audited-by-paladin-long.svg", alt: "Paladin Audited" }))) : null,
         defiYieldLink ? (React.createElement(StyledDefiYield, { href: defiYieldLink, target: "_blank", rel: "noreferrer" },
